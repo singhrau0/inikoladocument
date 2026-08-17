@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Completion Certificate</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            padding: 50px 70px;
+        }
+        .letterhead {
+            border-bottom: 4px solid #4a3a8c;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+        .letterhead-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .logo-section {
+            flex: 0 0 120px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+        .company-info {
+            flex: 1;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .company-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4a3a8c;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .company-tagline {
+            font-size: 13px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        .company-address {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.5;
+        }
+        .certificate-header {
+            text-align: center;
+            margin: 40px 0 35px 0;
+        }
+        .certificate-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a3a8c;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .certificate-subtitle {
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+        .ref-date {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 12px;
+        }
+        .content-section {
+            margin: 25px 0;
+            text-align: justify;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+        .intern-details-box {
+            background: linear-gradient(to right, #f8f9fa, #ffffff);
+            border-left: 5px solid #4a3a8c;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .details-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #4a3a8c;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .detail-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            flex: 0 0 200px;
+            font-weight: bold;
+            color: #333;
+        }
+        .detail-value {
+            flex: 1;
+            color: #000;
+        }
+        .responsibilities-section {
+            margin: 25px 0;
+        }
+        .responsibilities-title {
+            font-weight: bold;
+            color: #4a3a8c;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .responsibilities-list {
+            margin-left: 25px;
+            line-height: 1.8;
+        }
+        .responsibilities-list li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .performance-box {
+            background: #fffbeb;
+            border: 2px solid #fbbf24;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+        }
+        .signature-section {
+            margin-top: 60px;
+            page-break-inside: avoid;
+        }
+        .signature-block {
+            margin-top: 80px;
+        }
+        .signature-line {
+            border-top: 2px solid #000;
+            width: 250px;
+            margin-bottom: 8px;
+        }
+        .signatory-name {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000;
+        }
+        .signatory-title {
+            font-size: 12px;
+            color: #555;
+            margin-top: 3px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px double #4a3a8c;
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+        }
+        .footer-info {
+            margin-bottom: 8px;
+        }
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="letterhead">
+        <div class="letterhead-top">
+            <div class="logo-section">
+                <img src="logo.jpeg" alt="Inikola Logo" class="logo">
+            </div>
+            <div class="company-info">
+                <div class="company-name">Inikola (OPC) Private Limited</div>
+                <div class="company-tagline">Pioneering Innovation in Artificial Intelligence & Data Science</div>
+                <div class="company-address">
+                    Corporate Office: Technology Park, Innovation Hub<br>
+                    Email: info@inikola.com | Website: www.inikola.com | Phone: +91-XXXXXXXXXX<br>
+                    CIN: UXXXXXXXXXXXXXXXXXXXXX | GSTIN: XXXXXXXXXXXXXXX
+                </div>
+            </div>
+            <div class="logo-section"></div>
+        </div>
+    </div>
+
+    <div class="ref-date">
+        <div><strong>Ref No:</strong> INIKOLA/INT/2025/010</div>
+        <div><strong>Date:</strong> June 31, 2025</div>
+    </div>
+
+    <div class="certificate-header">
+        <div class="certificate-title">Internship Completion Certificate</div>
+        <div class="certificate-subtitle">This is to certify successful completion of internship program</div>
+    </div>
+
+    <div class="content-section">
+        <p><strong>To Whom It May Concern,</strong></p>
+    </div>
+
+    <div class="content-section">
+        <p>This is to certify that <strong>Mr. MARADANI SATYA SAI KARTHIK</strong> has successfully completed his internship program with <strong>Inikola (OPC) Private Limited</strong> in the domain of <strong>Generative Artificial Intelligence and Data Science</strong>.</p>
+    </div>
+
+    <div class="intern-details-box">
+        <div class="details-title">Internship Program Details</div>
+        <div class="detail-row">
+            <div class="detail-label">Intern Name:</div>
+            <div class="detail-value">Maradani Satya Sai Karthik</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Employee ID:</div>
+            <div class="detail-value">IN010</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Internship Position:</div>
+            <div class="detail-value">Gen AI Data Science Intern</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Department:</div>
+            <div class="detail-value">Artificial Intelligence & Data Science Division</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Internship Duration:</div>
+            <div class="detail-value">7 (Seven) Months</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Period:</div>
+            <div class="detail-value">November 1, 2024 to Jun 31, 2025</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Reporting Manager:</div>
+            <div class="detail-value">Head - AI/ML Development Team</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Work Mode:</div>
+            <div class="detail-value">Full-Time (On-site/Hybrid)</div>
+        </div>
+    </div>
+
+    <div class="responsibilities-section">
+        <div class="responsibilities-title">Key Responsibilities & Learning Areas:</div>
+        <ul class="responsibilities-list">
+            <li>Development and implementation of Generative AI models using state-of-the-art frameworks including GPT, BERT, and transformer architectures</li>
+            <li>Data preprocessing, feature engineering, and exploratory data analysis on large-scale datasets</li>
+            <li>Building and optimizing machine learning pipelines for natural language processing and computer vision applications</li>
+            <li>Collaboration with senior data scientists on real-world AI projects and production deployment</li>
+            <li>Implementation of model evaluation metrics, A/B testing, and performance optimization techniques</li>
+            <li>Research and development of innovative AI solutions for business challenges</li>
+            <li>Documentation of technical processes, code review participation, and knowledge sharing sessions</li>
+            <li>Working with cloud platforms (AWS/Azure/GCP) for model deployment and MLOps practices</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <p>During the internship tenure, Mr. Karthik demonstrated exceptional technical acumen, strong analytical capabilities, and remarkable dedication to learning advanced AI/ML concepts. He actively contributed to multiple projects involving generative AI applications, showing proficiency in Python, TensorFlow, PyTorch, and various data science libraries.</p>
+    </div>
+
+    <div class="performance-box">
+        <strong>Performance Assessment:</strong> Mr. Karthik consistently exhibited excellent problem-solving abilities, maintained high code quality standards, and effectively collaborated with cross-functional teams. His contributions to our generative AI initiatives were valuable and demonstrated both creativity and technical depth. He successfully completed all assigned projects within timelines and showed great potential for growth in the field of artificial intelligence.
+    </div>
+
+    <div class="content-section">
+        <p>He has shown commendable professional ethics, punctuality, and a keen willingness to learn and adapt to new technologies. His ability to grasp complex AI concepts and apply them to practical scenarios has been noteworthy.</p>
+    </div>
+
+    <div class="content-section">
+        <p>We are confident that the skills and experience gained during this internship will serve as a strong foundation for his professional career in the field of Artificial Intelligence and Data Science.</p>
+    </div>
+
+    <div class="content-section">
+        <p>We wish him continued success in all his future endeavors and are pleased to have had him as part of our team.</p>
+    </div>
+
+    <div class="signature-section">
+        <p><strong>For Inikola (OPC) Private Limited</strong></p>
+        <div class="signature-block">
+            <div class="signature-line"></div>
+            <div class="signatory-name">Aman Kasaudhan</div>
+            <div class="signatory-title">Chief Executive Officer</div>
+            <div class="signatory-title">Inikola (OPC) Pvt Ltd</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-info"><strong>Inikola (OPC) Private Limited</strong></div>
+        <div class="footer-info">This is an official document issued by the authorized signatory of the company</div>
+        <div class="footer-info">For verification purposes, please contact: hr@inikola.com</div>
+    </div>
+</body>
+</html>

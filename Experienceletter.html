@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Certificate</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            padding: 50px 70px;
+        }
+        .letterhead {
+            border-bottom: 4px solid #4a3a8c;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+        .letterhead-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .logo-section {
+            flex: 0 0 120px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+        .company-info {
+            flex: 1;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .company-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4a3a8c;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .company-tagline {
+            font-size: 13px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        .company-address {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.5;
+        }
+        .certificate-header {
+            text-align: center;
+            margin: 40px 0 35px 0;
+        }
+        .certificate-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a3a8c;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .ref-date {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 12px;
+        }
+        .content-section {
+            margin: 25px 0;
+            text-align: justify;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+        .employment-details-box {
+            background: linear-gradient(to right, #f8f9fa, #ffffff);
+            border-left: 5px solid #4a3a8c;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .details-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #4a3a8c;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .detail-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            flex: 0 0 220px;
+            font-weight: bold;
+            color: #333;
+        }
+        .detail-value {
+            flex: 1;
+            color: #000;
+        }
+        .responsibilities-section {
+            margin: 25px 0;
+        }
+        .responsibilities-title {
+            font-weight: bold;
+            color: #4a3a8c;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .responsibilities-list {
+            margin-left: 25px;
+            line-height: 1.8;
+        }
+        .responsibilities-list li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .projects-section {
+            background: #f0f9ff;
+            border: 2px solid #3b82f6;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .signature-section {
+            margin-top: 60px;
+            page-break-inside: avoid;
+        }
+        .signature-block {
+            margin-top: 80px;
+        }
+        .signature-line {
+            border-top: 2px solid #000;
+            width: 250px;
+            margin-bottom: 8px;
+        }
+        .signatory-name {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000;
+        }
+        .signatory-title {
+            font-size: 12px;
+            color: #555;
+            margin-top: 3px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px double #4a3a8c;
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+        }
+        .footer-info {
+            margin-bottom: 8px;
+        }
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="letterhead">
+        <div class="letterhead-top">
+            <div class="logo-section">
+                <img src="logo.jpeg" alt="Inikola Logo" class="logo">
+            </div>
+            <div class="company-info">
+                <div class="company-name">Inikola (OPC) Private Limited</div>
+                <div class="company-tagline">Pioneering Innovation in Artificial Intelligence & Data Science</div>
+                <div class="company-address">
+                    Corporate Office: Technology Park, Innovation Hub<br>
+                    Email: info@inikola.com | Website: www.inikola.com | Phone: +91-XXXXXXXXXX<br>
+                    CIN: UXXXXXXXXXXXXXXXXXXXXX | GSTIN: XXXXXXXXXXXXXXX
+                </div>
+            </div>
+            <div class="logo-section"></div>
+        </div>
+    </div>
+
+    <div class="ref-date">
+        <div><strong>Ref No:</strong> INIKOLA/EXP/2025/010</div>
+        <div><strong>Date:</strong> December 31, 2025</div>
+    </div>
+
+    <div class="certificate-header">
+        <div class="certificate-title">Experience Certificate</div>
+    </div>
+
+    <div class="content-section">
+        <p><strong>To Whom It May Concern,</strong></p>
+    </div>
+
+    <div class="content-section">
+        <p>This is to certify that <strong>Mr. MARADANI SATYA SAI KARTHIK</strong> was employed with <strong>Inikola (OPC) Private Limited</strong> as a full-time employee in the capacity of <strong>Gen AI Data Scientist</strong> in our Artificial Intelligence and Data Science Division.</p>
+    </div>
+
+    <div class="employment-details-box">
+        <div class="details-title">Employment Information</div>
+        <div class="detail-row">
+            <div class="detail-label">Employee Name:</div>
+            <div class="detail-value">Maradani Satya Sai Karthik</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Employee ID:</div>
+            <div class="detail-value">IN010</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Designation:</div>
+            <div class="detail-value">Gen AI Data Scientist</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Department:</div>
+            <div class="detail-value">Artificial Intelligence & Data Science Division</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Employment Type:</div>
+            <div class="detail-value">Full-Time (Permanent)</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Date of Joining:</div>
+            <div class="detail-value">July 1, 2025</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Date of Relieving:</div>
+            <div class="detail-value">December 31, 2025</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Total Duration:</div>
+            <div class="detail-value">6 (Six) Months</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Monthly Compensation:</div>
+            <div class="detail-value">INR 20,000/- (Indian Rupees Twenty Thousand Only)</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Reporting To:</div>
+            <div class="detail-value">Chief Technology Officer / Head of AI Division</div>
+        </div>
+    </div>
+
+    <div class="responsibilities-section">
+        <div class="responsibilities-title">Key Responsibilities & Contributions:</div>
+        <ul class="responsibilities-list">
+            <li>Designed, developed, and deployed advanced Generative AI models including Large Language Models (LLMs), GPT-based applications, and transformer architectures for various business use cases</li>
+            <li>Led end-to-end machine learning projects from data collection and preprocessing to model deployment and monitoring in production environments</li>
+            <li>Conducted comprehensive data analysis, statistical modeling, and predictive analytics on complex datasets to derive actionable business insights</li>
+            <li>Implemented natural language processing (NLP) solutions for text generation, sentiment analysis, named entity recognition, and document understanding</li>
+            <li>Developed computer vision applications utilizing deep learning frameworks for image classification, object detection, and image generation tasks</li>
+            <li>Optimized AI model performance through hyperparameter tuning, feature engineering, and advanced optimization techniques achieving significant accuracy improvements</li>
+            <li>Collaborated with product managers, software engineers, and stakeholders to translate business requirements into technical AI solutions</li>
+            <li>Conducted research on latest AI/ML trends, published technical documentation, and mentored junior team members on best practices</li>
+            <li>Implemented data governance, model validation, and ethical AI practices ensuring compliance with industry standards</li>
+        </ul>
+    </div>
+
+    <div class="projects-section">
+        <div class="responsibilities-title">Major Projects & Technical Expertise:</div>
+        <ul class="responsibilities-list" style="margin-left: 25px;">
+            <li><strong>Generative AI Applications:</strong> Development of chatbots, content generation systems, and conversational AI platforms</li>
+            <li><strong>Machine Learning Frameworks:</strong> Proficient in TensorFlow, PyTorch, Keras, Scikit-learn, and Hugging Face Transformers</li>
+            <li><strong>Programming & Tools:</strong> Python, SQL, Git, Docker, Kubernetes, Jupyter Notebooks, and MLflow</li>
+            <li><strong>Data Processing:</strong> Pandas, NumPy, Apache Spark for large-scale data manipulation and analysis</li>
+            <li><strong>Cloud Platforms:</strong> Experience with AWS SageMaker, Azure ML, Google Cloud AI for model deployment</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <p>During his tenure with Inikola (OPC) Private Limited, Mr. Karthik consistently demonstrated exceptional technical expertise, innovative thinking, and strong problem-solving capabilities. He successfully delivered multiple high-impact AI projects that contributed significantly to our organization's technological advancement and business objectives.</p>
+    </div>
+
+    <div class="content-section">
+        <p>Mr. Karthik exhibited outstanding professional conduct, maintained excellent code quality standards, and showed remarkable ability to work both independently and collaboratively in team environments. His contributions to our generative AI initiatives, research activities, and knowledge-sharing sessions were highly valuable.</p>
+    </div>
+
+    <div class="content-section">
+        <p>He proved to be a dedicated, reliable, and highly skilled professional who consistently met project deadlines and exceeded performance expectations. His analytical mindset, attention to detail, and commitment to continuous learning made him a valuable asset to our organization.</p>
+    </div>
+
+    <div class="content-section">
+        <p>We have found him to be sincere, hardworking, and possess excellent communication skills. His ability to explain complex technical concepts to non-technical stakeholders was particularly commendable.</p>
+    </div>
+
+    <div class="content-section">
+        <p>We wish him all the very best for his future professional endeavors and are confident that he will excel in his career in the field of Artificial Intelligence and Data Science.</p>
+    </div>
+
+    <div class="signature-section">
+        <p><strong>For Inikola (OPC) Private Limited</strong></p>
+        <div class="signature-block">
+            <div class="signature-line"></div>
+            <div class="signatory-name">Aman Kasaudhan</div>
+            <div class="signatory-title">Chief Executive Officer</div>
+            <div class="signatory-title">Inikola (OPC) Pvt Ltd</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-info"><strong>Inikola (OPC) Private Limited</strong></div>
+        <div class="footer-info">This is an official employment certificate issued by the authorized signatory</div>
+        <div class="footer-info">For verification and enquiries: hr@inikola.com | +91-XXXXXXXXXX</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Slips - July to December 2025</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fff;
+            color: #000;
+        }
+        .payslip-page {
+            page-break-after: always;
+            padding: 40px 60px;
+        }
+        .payslip-page:last-child {
+            page-break-after: auto;
+        }
+        .payslip-container {
+            border: 3px solid #4a3a8c;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .header {
+            background: linear-gradient(135deg, #4a3a8c 0%, #6b5bb0 100%);
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+        .logo {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 12px;
+        }
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .company-tagline {
+            font-size: 11px;
+            opacity: 0.9;
+        }
+        .payslip-title {
+            background: #2d2560;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .content {
+            padding: 25px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            display: flex;
+            padding: 6px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .label {
+            font-weight: 600;
+            color: #374151;
+            width: 130px;
+            font-size: 12px;
+        }
+        .value {
+            color: #000;
+            font-weight: 500;
+            font-size: 12px;
+        }
+        .salary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .salary-table th {
+            background: #4a3a8c;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 12px;
+            border: 1px solid #4a3a8c;
+        }
+        .salary-table td {
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            font-size: 12px;
+        }
+        .earnings {
+            background: #eff6ff;
+        }
+        .deductions {
+            background: #fef2f2;
+        }
+        .total-row {
+            background: #4a3a8c;
+            color: white;
+            font-weight: bold;
+        }
+        .amount {
+            text-align: right;
+            font-weight: 600;
+        }
+        .net-box {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            padding: 18px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .net-amount {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        .amount-words {
+            font-size: 13px;
+            font-style: italic;
+        }
+        .bank-box {
+            background: #fffbeb;
+            border: 2px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .bank-title {
+            font-weight: bold;
+            color: #92400e;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        .bank-row {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            padding: 5px 0;
+            font-size: 12px;
+        }
+        .bank-label {
+            font-weight: 600;
+            color: #78350f;
+        }
+        .bank-value {
+            color: #000;
+        }
+        .signature-section {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sig-box {
+            text-align: center;
+        }
+        .sig-line {
+            border-top: 2px solid #000;
+            width: 180px;
+            margin: 50px auto 8px;
+        }
+        .sig-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #555;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 12px;
+            background: #f3f4f6;
+            border-top: 2px solid #4a3a8c;
+            font-size: 9px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- JULY 2025 -->
+<div class="payslip-page">
+    <div class="payslip-container">
+        <div class="header">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="company-name">INIKOLA (OPC) PVT LTD</div>
+            <div class="company-tagline">AI & Data Science Solutions</div>
+        </div>
+        
+        <div class="payslip-title">SALARY SLIP - JULY 2025</div>
+        
+        <div class="content">
+            <div class="info-grid">
+                <div>
+                    <div class="info-item">
+                        <div class="label">Employee Name:</div>
+                        <div class="value">Maradani Satya Sai Karthik</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Employee ID:</div>
+                        <div class="value">IN010</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Designation:</div>
+                        <div class="value">Gen AI Data Scientist</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-item">
+                        <div class="label">Department:</div>
+                        <div class="value">AI & Data Science</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Pay Period:</div>
+                        <div class="value">July 2025</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Working Days:</div>
+                        <div class="value">31 / 31</div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="salary-table">
+                <tr>
+                    <th style="width: 45%;">EARNINGS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                    <th style="width: 35%;">DEDUCTIONS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                </tr>
+                <tr>
+                    <td class="earnings">Basic Salary</td>
+                    <td class="earnings amount">20,000.00</td>
+                    <td class="deductions">NIL</td>
+                    <td class="deductions amount">0.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>GROSS SALARY</td>
+                    <td class="amount">20,000.00</td>
+                    <td>TOTAL DEDUCTIONS</td>
+                    <td class="amount">0.00</td>
+                </tr>
+            </table>
+
+            <div class="net-box">
+                <div style="font-size: 15px; font-weight: bold;">NET SALARY</div>
+                <div class="net-amount">₹ 20,000.00</div>
+                <div class="amount-words">(Rupees Twenty Thousand Only)</div>
+            </div>
+
+            <div class="bank-box">
+                <div class="bank-title">PAYMENT DETAILS</div>
+                <div class="bank-row">
+                    <div class="bank-label">Payment Mode:</div>
+                    <div class="bank-value">NEFT</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Holder:</div>
+                    <div class="bank-value">Maradani Satya Sai Karthik</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Number:</div>
+                    <div class="bank-value">142999500004561</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">IFSC Code:</div>
+                    <div class="bank-value">YESB0001429</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Branch:</div>
+                    <div class="bank-value">Tanasha Nagar, Manikonda, Hyderabad</div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Employee Signature</div>
+                </div>
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Authorized Signatory</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                This is a computer-generated payslip • For queries: hr@inikola.com
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AUGUST 2025 -->
+<div class="payslip-page">
+    <div class="payslip-container">
+        <div class="header">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="company-name">INIKOLA (OPC) PVT LTD</div>
+            <div class="company-tagline">AI & Data Science Solutions</div>
+        </div>
+        
+        <div class="payslip-title">SALARY SLIP - AUGUST 2025</div>
+        
+        <div class="content">
+            <div class="info-grid">
+                <div>
+                    <div class="info-item">
+                        <div class="label">Employee Name:</div>
+                        <div class="value">Maradani Satya Sai Karthik</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Employee ID:</div>
+                        <div class="value">IN010</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Designation:</div>
+                        <div class="value">Gen AI Data Scientist</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-item">
+                        <div class="label">Department:</div>
+                        <div class="value">AI & Data Science</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Pay Period:</div>
+                        <div class="value">August 2025</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Working Days:</div>
+                        <div class="value">31 / 31</div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="salary-table">
+                <tr>
+                    <th style="width: 45%;">EARNINGS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                    <th style="width: 35%;">DEDUCTIONS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                </tr>
+                <tr>
+                    <td class="earnings">Basic Salary</td>
+                    <td class="earnings amount">20,000.00</td>
+                    <td class="deductions">NIL</td>
+                    <td class="deductions amount">0.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>GROSS SALARY</td>
+                    <td class="amount">20,000.00</td>
+                    <td>TOTAL DEDUCTIONS</td>
+                    <td class="amount">0.00</td>
+                </tr>
+            </table>
+
+            <div class="net-box">
+                <div style="font-size: 15px; font-weight: bold;">NET SALARY</div>
+                <div class="net-amount">₹ 20,000.00</div>
+                <div class="amount-words">(Rupees Twenty Thousand Only)</div>
+            </div>
+
+            <div class="bank-box">
+                <div class="bank-title">PAYMENT DETAILS</div>
+                <div class="bank-row">
+                    <div class="bank-label">Payment Mode:</div>
+                    <div class="bank-value">NEFT</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Holder:</div>
+                    <div class="bank-value">Maradani Satya Sai Karthik</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Number:</div>
+                    <div class="bank-value">142999500004561</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">IFSC Code:</div>
+                    <div class="bank-value">YESB0001429</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Branch:</div>
+                    <div class="bank-value">Tanasha Nagar, Manikonda, Hyderabad</div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Employee Signature</div>
+                </div>
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Authorized Signatory</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                This is a computer-generated payslip • For queries: hr@inikola.com
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEPTEMBER 2025 -->
+<div class="payslip-page">
+    <div class="payslip-container">
+        <div class="header">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="company-name">INIKOLA (OPC) PVT LTD</div>
+            <div class="company-tagline">AI & Data Science Solutions</div>
+        </div>
+        
+        <div class="payslip-title">SALARY SLIP - SEPTEMBER 2025</div>
+        
+        <div class="content">
+            <div class="info-grid">
+                <div>
+                    <div class="info-item">
+                        <div class="label">Employee Name:</div>
+                        <div class="value">Maradani Satya Sai Karthik</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Employee ID:</div>
+                        <div class="value">IN010</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Designation:</div>
+                        <div class="value">Gen AI Data Scientist</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-item">
+                        <div class="label">Department:</div>
+                        <div class="value">AI & Data Science</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Pay Period:</div>
+                        <div class="value">September 2025</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Working Days:</div>
+                        <div class="value">30 / 30</div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="salary-table">
+                <tr>
+                    <th style="width: 45%;">EARNINGS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                    <th style="width: 35%;">DEDUCTIONS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                </tr>
+                <tr>
+                    <td class="earnings">Basic Salary</td>
+                    <td class="earnings amount">20,000.00</td>
+                    <td class="deductions">NIL</td>
+                    <td class="deductions amount">0.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>GROSS SALARY</td>
+                    <td class="amount">20,000.00</td>
+                    <td>TOTAL DEDUCTIONS</td>
+                    <td class="amount">0.00</td>
+                </tr>
+            </table>
+
+            <div class="net-box">
+                <div style="font-size: 15px; font-weight: bold;">NET SALARY</div>
+                <div class="net-amount">₹ 20,000.00</div>
+                <div class="amount-words">(Rupees Twenty Thousand Only)</div>
+            </div>
+
+            <div class="bank-box">
+                <div class="bank-title">PAYMENT DETAILS</div>
+                <div class="bank-row">
+                    <div class="bank-label">Payment Mode:</div>
+                    <div class="bank-value">NEFT</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Holder:</div>
+                    <div class="bank-value">Maradani Satya Sai Karthik</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Number:</div>
+                    <div class="bank-value">142999500004561</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">IFSC Code:</div>
+                    <div class="bank-value">YESB0001429</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Branch:</div>
+                    <div class="bank-value">Tanasha Nagar, Manikonda, Hyderabad</div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Employee Signature</div>
+                </div>
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Authorized Signatory</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                This is a computer-generated payslip • For queries: hr@inikola.com
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- OCTOBER 2025 -->
+<div class="payslip-page">
+    <div class="payslip-container">
+        <div class="header">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="company-name">INIKOLA (OPC) PVT LTD</div>
+            <div class="company-tagline">AI & Data Science Solutions</div>
+        </div>
+        
+        <div class="payslip-title">SALARY SLIP - OCTOBER 2025</div>
+        
+        <div class="content">
+            <div class="info-grid">
+                <div>
+                    <div class="info-item">
+                        <div class="label">Employee Name:</div>
+                        <div class="value">Maradani Satya Sai Karthik</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Employee ID:</div>
+                        <div class="value">IN010</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Designation:</div>
+                        <div class="value">Gen AI Data Scientist</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-item">
+                        <div class="label">Department:</div>
+                        <div class="value">AI & Data Science</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Pay Period:</div>
+                        <div class="value">October 2025</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Working Days:</div>
+                        <div class="value">31 / 31</div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="salary-table">
+                <tr>
+                    <th style="width: 45%;">EARNINGS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                    <th style="width: 35%;">DEDUCTIONS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                </tr>
+                <tr>
+                    <td class="earnings">Basic Salary</td>
+                    <td class="earnings amount">20,000.00</td>
+                    <td class="deductions">NIL</td>
+                    <td class="deductions amount">0.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>GROSS SALARY</td>
+                    <td class="amount">20,000.00</td>
+                    <td>TOTAL DEDUCTIONS</td>
+                    <td class="amount">0.00</td>
+                </tr>
+            </table>
+
+            <div class="net-box">
+                <div style="font-size: 15px; font-weight: bold;">NET SALARY</div>
+                <div class="net-amount">₹ 20,000.00</div>
+                <div class="amount-words">(Rupees Twenty Thousand Only)</div>
+            </div>
+
+            <div class="bank-box">
+                <div class="bank-title">PAYMENT DETAILS</div>
+                <div class="bank-row">
+                    <div class="bank-label">Payment Mode:</div>
+                    <div class="bank-value">NEFT</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Holder:</div>
+                    <div class="bank-value">Maradani Satya Sai Karthik</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Number:</div>
+                    <div class="bank-value">142999500004561</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">IFSC Code:</div>
+                    <div class="bank-value">YESB0001429</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Branch:</div>
+                    <div class="bank-value">Tanasha Nagar, Manikonda, Hyderabad</div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Employee Signature</div>
+                </div>
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Authorized Signatory</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                This is a computer-generated payslip • For queries: hr@inikola.com
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NOVEMBER 2025 -->
+<div class="payslip-page">
+    <div class="payslip-container">
+        <div class="header">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="company-name">INIKOLA (OPC) PVT LTD</div>
+            <div class="company-tagline">AI & Data Science Solutions</div>
+        </div>
+        
+        <div class="payslip-title">SALARY SLIP - NOVEMBER 2025</div>
+        
+        <div class="content">
+            <div class="info-grid">
+                <div>
+                    <div class="info-item">
+                        <div class="label">Employee Name:</div>
+                        <div class="value">Maradani Satya Sai Karthik</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Employee ID:</div>
+                        <div class="value">IN010</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Designation:</div>
+                        <div class="value">Gen AI Data Scientist</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-item">
+                        <div class="label">Department:</div>
+                        <div class="value">AI & Data Science</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Pay Period:</div>
+                        <div class="value">November 2025</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Working Days:</div>
+                        <div class="value">30 / 30</div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="salary-table">
+                <tr>
+                    <th style="width: 45%;">EARNINGS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                    <th style="width: 35%;">DEDUCTIONS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                </tr>
+                <tr>
+                    <td class="earnings">Basic Salary</td>
+                    <td class="earnings amount">20,000.00</td>
+                    <td class="deductions">NIL</td>
+                    <td class="deductions amount">0.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>GROSS SALARY</td>
+                    <td class="amount">20,000.00</td>
+                    <td>TOTAL DEDUCTIONS</td>
+                    <td class="amount">0.00</td>
+                </tr>
+            </table>
+
+            <div class="net-box">
+                <div style="font-size: 15px; font-weight: bold;">NET SALARY</div>
+                <div class="net-amount">₹ 20,000.00</div>
+                <div class="amount-words">(Rupees Twenty Thousand Only)</div>
+            </div>
+
+            <div class="bank-box">
+                <div class="bank-title">PAYMENT DETAILS</div>
+                <div class="bank-row">
+                    <div class="bank-label">Payment Mode:</div>
+                    <div class="bank-value">NEFT</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Holder:</div>
+                    <div class="bank-value">Maradani Satya Sai Karthik</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Number:</div>
+                    <div class="bank-value">142999500004561</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">IFSC Code:</div>
+                    <div class="bank-value">YESB0001429</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Branch:</div>
+                    <div class="bank-value">Tanasha Nagar, Manikonda, Hyderabad</div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Employee Signature</div>
+                </div>
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Authorized Signatory</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                This is a computer-generated payslip • For queries: hr@inikola.com
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- December 2025 -->
+<div class="payslip-page">
+    <div class="payslip-container">
+        <div class="header">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <div class="company-name">INIKOLA (OPC) PVT LTD</div>
+            <div class="company-tagline">AI & Data Science Solutions</div>
+        </div>
+        
+        <div class="payslip-title">SALARY SLIP - December 2025</div>
+        
+        <div class="content">
+            <div class="info-grid">
+                <div>
+                    <div class="info-item">
+                        <div class="label">Employee Name:</div>
+                        <div class="value">Maradani Satya Sai Karthik</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Employee ID:</div>
+                        <div class="value">IN010</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Designation:</div>
+                        <div class="value">Gen AI Data Scientist</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-item">
+                        <div class="label">Department:</div>
+                        <div class="value">AI & Data Science</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Pay Period:</div>
+                        <div class="value">December 2025</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Working Days:</div>
+                        <div class="value">30 / 30</div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="salary-table">
+                <tr>
+                    <th style="width: 45%;">EARNINGS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                    <th style="width: 35%;">DEDUCTIONS</th>
+                    <th style="width: 20%;">AMOUNT (₹)</th>
+                </tr>
+                <tr>
+                    <td class="earnings">Basic Salary</td>
+                    <td class="earnings amount">20,000.00</td>
+                    <td class="deductions">NIL</td>
+                    <td class="deductions amount">0.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>GROSS SALARY</td>
+                    <td class="amount">20,000.00</td>
+                    <td>TOTAL DEDUCTIONS</td>
+                    <td class="amount">0.00</td>
+                </tr>
+            </table>
+
+            <div class="net-box">
+                <div style="font-size: 15px; font-weight: bold;">NET SALARY</div>
+                <div class="net-amount">₹ 20,000.00</div>
+                <div class="amount-words">(Rupees Twenty Thousand Only)</div>
+            </div>
+
+            <div class="bank-box">
+                <div class="bank-title">PAYMENT DETAILS</div>
+                <div class="bank-row">
+                    <div class="bank-label">Payment Mode:</div>
+                    <div class="bank-value">NEFT</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Holder:</div>
+                    <div class="bank-value">Maradani Satya Sai Karthik</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Account Number:</div>
+                    <div class="bank-value">142999500004561</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">IFSC Code:</div>
+                    <div class="bank-value">YESB0001429</div>
+                </div>
+                <div class="bank-row">
+                    <div class="bank-label">Branch:</div>
+                    <div class="bank-value">Tanasha Nagar, Manikonda, Hyderabad</div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Employee Signature</div>
+                </div>
+                <div class="sig-box">
+                    <div class="sig-line"></div>
+                    <div class="sig-label">Authorized Signatory</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                This is a computer-generated payslip • For queries: hr@inikola.com
+            </div>
+        </div>
+    </div>
+</div>

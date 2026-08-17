@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relieving Letter</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            padding: 50px 70px;
+        }
+        .letterhead {
+            border-bottom: 4px solid #4a3a8c;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+        .letterhead-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .logo-section {
+            flex: 0 0 120px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+        .company-info {
+            flex: 1;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .company-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4a3a8c;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .company-tagline {
+            font-size: 13px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        .company-address {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.5;
+        }
+        .letter-header {
+            text-align: center;
+            margin: 40px 0 35px 0;
+        }
+        .letter-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a3a8c;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .ref-date {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 12px;
+        }
+        .content-section {
+            margin: 25px 0;
+            text-align: justify;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+        .employee-details-box {
+            background: linear-gradient(to right, #f8f9fa, #ffffff);
+            border-left: 5px solid #4a3a8c;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .details-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #4a3a8c;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .detail-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            flex: 0 0 220px;
+            font-weight: bold;
+            color: #333;
+        }
+        .detail-value {
+            flex: 1;
+            color: #000;
+        }
+        .clearance-section {
+            background: #f0fdf4;
+            border: 2px solid #22c55e;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .clearance-title {
+            font-weight: bold;
+            color: #15803d;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .clearance-list {
+            margin-left: 25px;
+            line-height: 1.8;
+        }
+        .clearance-list li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .signature-section {
+            margin-top: 60px;
+            page-break-inside: avoid;
+        }
+        .signature-block {
+            margin-top: 80px;
+        }
+        .signature-line {
+            border-top: 2px solid #000;
+            width: 250px;
+            margin-bottom: 8px;
+        }
+        .signatory-name {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000;
+        }
+        .signatory-title {
+            font-size: 12px;
+            color: #555;
+            margin-top: 3px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px double #4a3a8c;
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+        }
+        .footer-info {
+            margin-bottom: 8px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="letterhead">
+        <div class="letterhead-top">
+            <div class="logo-section">
+                <img src="logo.jpeg" alt="Inikola Logo" class="logo">
+            </div>
+            <div class="company-info">
+                <div class="company-name">Inikola (OPC) Private Limited</div>
+                <div class="company-tagline">Pioneering Innovation in Artificial Intelligence & Data Science</div>
+                <div class="company-address">
+                    Corporate Office: Manikonda Hyderabad<br>
+                    Email: info@inikola.com | Website: www.inikola.com | Phone: +91-XXXXXXXXXX<br>
+                    CIN: UXXXXXXXXXXXXXXXXXXXXX | GSTIN: XXXXXXXXXXXXXXX
+                </div>
+            </div>
+            <div class="logo-section"></div>
+        </div>
+    </div>
+
+    <div class="ref-date">
+        <div><strong>Ref No:</strong> INIKOLA/REL/2025/010</div>
+        <div><strong>Date:</strong> December 31, 2025</div>
+    </div>
+
+    <div class="letter-header">
+        <div class="letter-title">Relieving Letter</div>
+    </div>
+
+    <div class="content-section">
+        <p><strong>To Whom It May Concern,</strong></p>
+    </div>
+
+    <div class="content-section">
+        <p>This is to certify that <strong>Mr. MARADANI SATYA SAI KARTHIK</strong>, Employee ID: <strong>IN010</strong>, was employed with <strong>Inikola (OPC) Private Limited</strong> in the capacity of <strong>Gen AI Data Scientist</strong> in our Artificial Intelligence and Data Science Division.</p>
+    </div>
+
+    <div class="employee-details-box">
+        <div class="details-title">Employee Details</div>
+        <div class="detail-row">
+            <div class="detail-label">Employee Name:</div>
+            <div class="detail-value">Maradani Satya Sai Karthik</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Employee ID:</div>
+            <div class="detail-value">IN010</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Designation:</div>
+            <div class="detail-value">Gen AI Data Scientist</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Department:</div>
+            <div class="detail-value">Artificial Intelligence & Data Science Division</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Employment Type:</div>
+            <div class="detail-value">Full-Time (Permanent)</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Date of Joining:</div>
+            <div class="detail-value">July 1, 2025</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Date of Resignation:</div>
+            <div class="detail-value">December 15, 2025</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Last Working Day:</div>
+            <div class="detail-value">December 31, 2025</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Notice Period Served:</div>
+            <div class="detail-value">As per company policy</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Reason for Leaving:</div>
+            <div class="detail-value">Resignation - Personal/Career Growth</div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <p>Mr. Karthik submitted his resignation letter on December 15, 2025, which was duly accepted by the management. He has been formally relieved from all his duties and responsibilities with effect from the close of business hours on <strong>December 31, 2025</strong>.</p>
+    </div>
+
+    <div class="clearance-section">
+        <div class="clearance-title">Exit Clearance & Handover Status:</div>
+        <ul class="clearance-list">
+            <li><strong>Knowledge Transfer:</strong> Successfully completed comprehensive knowledge transfer and project handover to the designated team members</li>
+            <li><strong>Documentation:</strong> All project documentation, code repositories, and technical materials have been properly handed over and archived</li>
+            <li><strong>Company Assets:</strong> Returned all company property including laptop, access cards, official documents, and any other assets issued during employment</li>
+            <li><strong>Access Revocation:</strong> All system access, credentials, email accounts, and cloud platform permissions have been deactivated as per security protocols</li>
+            <li><strong>Financial Clearance:</strong> All financial settlements including final salary, pending reimbursements, and dues have been cleared</li>
+            <li><strong>Confidentiality:</strong> Acknowledged and committed to maintaining confidentiality of proprietary information and trade secrets as per employment agreement</li>
+            <li><strong>Exit Interview:</strong> Completed exit formalities and provided valuable feedback during the exit interview process</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box">
+        <strong>Clearance Confirmation:</strong> We hereby confirm that Mr. Maradani Satya Sai Karthik has successfully completed all exit formalities, settled all pending dues, and obtained full and final clearance from all departments including HR, Finance, IT, and Administration. He has no outstanding obligations or liabilities with the organization.
+    </div>
+
+    <div class="content-section">
+        <p>During his tenure with us from July 1, 2025 to December 31, 2025, Mr. Karthik demonstrated commendable professional skills, dedication, and integrity. He made valuable contributions to our artificial intelligence projects and maintained excellent working relationships with colleagues and management.</p>
+    </div>
+
+    <div class="content-section">
+        <p>As per our records, there are no disciplinary actions, performance issues, or pending matters against him. He leaves the organization in good standing with a clean employment record.</p>
+    </div>
+
+    <div class="content-section">
+        <p><strong>Employment Status:</strong> Mr. Karthik is hereby relieved from all contractual obligations with Inikola (OPC) Private Limited and is free to pursue employment opportunities elsewhere without any restrictions or non-compete constraints from our organization.</p>
+    </div>
+
+    <div class="content-section">
+        <p>We appreciate his contributions during his association with our company and wish him continued success and prosperity in all his future professional endeavors.</p>
+    </div>
+
+    <div class="content-section">
+        <p>This relieving letter is issued upon his request for official records and future employment purposes.</p>
+    </div>
+
+    <div class="signature-section">
+        <p><strong>For Inikola (OPC) Private Limited</strong></p>
+        <div class="signature-block">
+            <div class="signature-line"></div>
+            <div class="signatory-name">Aman Kasaudhan</div>
+            <div class="signatory-title">Chief Executive Officer</div>
+            <div class="signatory-title">Inikola (OPC) Pvt Ltd</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-info"><strong>Inikola (OPC) Private Limited</strong></div>
+        <div class="footer-info">This is an official relieving document issued by the authorized signatory</div>
+        <div class="footer-info">For verification: hr@inikola.com | Human Resources Department</div>
+        <div class="footer-info">Employee is advised to retain this document for future reference</div>
+    </div>
+</body>
+</html>
